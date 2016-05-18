@@ -20,12 +20,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     let defaultTopText = "TOP"
     let defaultBottomText = "BOTTOM"
-    struct Meme {
-        var topText: String?
-        var bottomText: String?
-        var originalImage: UIImage?
-        var memeImage: UIImage!
-    }
+//    struct Meme {
+//        var topText: String?
+//        var bottomText: String?
+//        var originalImage: UIImage?
+//        var memeImage: UIImage!
+//    }
     
     func resetTextField(textField: UITextField, defaultText: String) {
         // Set Text Field to Original values

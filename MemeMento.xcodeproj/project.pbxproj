@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA69A0401CECF05A0096A0F8 /* MemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69A03F1CECF05A0096A0F8 /* MemeModel.swift */; };
 		DAF588A11CDEB62D0091B703 /* ModifyTextStyleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF588A01CDEB62D0091B703 /* ModifyTextStyleVC.swift */; };
 		DAF7411F1CB30F0500CE49B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF7411E1CB30F0500CE49B2 /* AppDelegate.swift */; };
 		DAF741211CB30F0500CE49B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF741201CB30F0500CE49B2 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA69A03F1CECF05A0096A0F8 /* MemeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeModel.swift; sourceTree = "<group>"; };
 		DAF588A01CDEB62D0091B703 /* ModifyTextStyleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModifyTextStyleVC.swift; sourceTree = "<group>"; };
 		DAF7411B1CB30F0500CE49B2 /* MemeMento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF7411E1CB30F0500CE49B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				DAF741201CB30F0500CE49B2 /* ViewController.swift */,
 				DAF588A01CDEB62D0091B703 /* ModifyTextStyleVC.swift */,
 				DAF741221CB30F0500CE49B2 /* Main.storyboard */,
+				DA69A03F1CECF05A0096A0F8 /* MemeModel.swift */,
 				DAF741251CB30F0500CE49B2 /* Assets.xcassets */,
 				DAF741271CB30F0500CE49B2 /* LaunchScreen.storyboard */,
 				DAF7412A1CB30F0500CE49B2 /* Info.plist */,
@@ -143,6 +146,7 @@
 				DAF588A11CDEB62D0091B703 /* ModifyTextStyleVC.swift in Sources */,
 				DAF741211CB30F0500CE49B2 /* ViewController.swift in Sources */,
 				DAF7411F1CB30F0500CE49B2 /* AppDelegate.swift in Sources */,
+				DA69A0401CECF05A0096A0F8 /* MemeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
