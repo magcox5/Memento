@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+    
+    var memes:  [Meme] = []
 
     let memeTextAttributes: [String: AnyObject] = [
         NSStrokeColorAttributeName : UIColor.blackColor(),
@@ -178,7 +180,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     // methods for generating and saving the meme
     func save() {
         // Create the meme
-        _ = Meme( topText: topTitle.text!, bottomText:  bottomTitle.text!, originalImage: self.memeImageView.image, memeImage: generateMemedImage())
+        let meme = Meme( topText: topTitle.text!, bottomText:  bottomTitle.text!, originalImage: self.memeImageView.image, memeImage: generateMemedImage())
+        memes.append(meme)
     }
     
     func generateMemedImage() -> UIImage {
