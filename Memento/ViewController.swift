@@ -115,11 +115,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func cancelMeme(sender: UIBarButtonItem) {
         // Remove image and restore top and bottom titles to original state
-        memeImageView.image = nil
-        resetTextField(topTitle, defaultText: defaultTopText)
-        resetTextField(bottomTitle, defaultText: defaultBottomText)
-        navigationItem.leftBarButtonItem!.enabled = false
-    }
+//        memeImageView.image = nil
+//        resetTextField(topTitle, defaultText: defaultTopText)
+//        resetTextField(bottomTitle, defaultText: defaultBottomText)
+//        navigationItem.leftBarButtonItem!.enabled = false
+//        self.navigationController?.popViewController
+          navigationController?.popToRootViewControllerAnimated(true)   
+}
     
 
     // Subscribe to keyboard notifications so keyboard can be 

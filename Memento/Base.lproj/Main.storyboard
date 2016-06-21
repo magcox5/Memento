@@ -141,7 +141,7 @@
                                 <action selector="shareMeme:" destination="BYZ-38-t0r" id="CFw-7a-4WP"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="KUN-gD-yUI">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="KUN-gD-yUI">
                             <connections>
                                 <action selector="cancelMeme:" destination="BYZ-38-t0r" id="JEM-QN-k1q"/>
                             </connections>
