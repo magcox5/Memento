@@ -12,8 +12,23 @@ class MemeTableViewController: UITableViewController {
 
     
     // Get memes from memes array
-    let myMemes = [Meme]()
+    var myMemes = [Meme]()
+ 
+    @IBOutlet var memeTableView: UITableView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        memeTableView.reloadData()
+    }
+    
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.hidden = false
+    }
+    
+
     // MARK: Table View Data Source
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

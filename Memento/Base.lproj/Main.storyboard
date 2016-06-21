@@ -203,10 +203,13 @@
                     <navigationItem key="navigationItem" title="Sent Memes" id="qaG-xe-m9L">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="uWv-0M-spq">
                             <connections>
-                                <segue destination="gYv-QP-ky2" kind="show" id="Wro-Jd-DLz"/>
+                                <segue destination="BYZ-38-t0r" kind="show" id="y5t-Er-b0j"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="memeTableView" destination="dfR-zT-Dgs" id="EEq-P8-2RG"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gK-wP-2Mh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -280,7 +283,7 @@
                     <navigationItem key="navigationItem" title="Sent Memes" id="U0o-Uy-tJV">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="M4m-k3-9bB">
                             <connections>
-                                <segue destination="gYv-QP-ky2" kind="show" id="PPD-ad-h0Q"/>
+                                <segue destination="BYZ-38-t0r" kind="show" id="gOx-jl-2YJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -341,24 +344,6 @@
             </objects>
             <point key="canvasLocation" x="-2387" y="-2179"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="hQB-wn-xcM">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gYv-QP-ky2" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gnn-jn-oV2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5Bb-8Y-vyp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ib9-CZ-Hph" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-171" y="-2191"/>
-        </scene>
     </scenes>
     <resources>
         <image name="camera" width="22" height="22"/>
@@ -367,6 +352,6 @@
         <image name="table_30x30" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Wro-Jd-DLz"/>
+        <segue reference="y5t-Er-b0j"/>
     </inferredMetricsTieBreakers>
 </document>
