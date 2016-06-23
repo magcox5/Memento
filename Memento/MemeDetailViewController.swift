@@ -14,6 +14,10 @@ class MemeDetailViewController: UIViewController {
     
     @IBOutlet weak var memeImageAndText: UIImageView!
     
+//    @IBAction func backToSentMemes(sender: AnyObject) {
+//        dismissViewControllerAnimated(true, completion: nil)
+//    }
+    
     override func viewWillAppear(animated: Bool) {
 
         super.viewWillAppear(animated)

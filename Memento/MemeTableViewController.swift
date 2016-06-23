@@ -12,7 +12,7 @@ class MemeTableViewController: UITableViewController {
 
     
     // Get memes from memes array
-    var myMemes = [Meme]()
+    var myMemes: [Meme] = []
  
     @IBOutlet var memeTableView: UITableView!
     
@@ -26,6 +26,8 @@ class MemeTableViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.hidden = false
+        myMemes = memes
+        memeTableView.reloadData()
     }
     
 

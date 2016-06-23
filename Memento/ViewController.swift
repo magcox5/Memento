@@ -6,11 +6,14 @@
 //  Copyright © 2016 Molly Cox. All rights reserved.
 //
 
+
+var memes:  [Meme] = []
+
 import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
-    
-    var memes:  [Meme] = []
+
+    @IBOutlet weak var navBar: UINavigationBar!
 
     let memeTextAttributes: [String: AnyObject] = [
         NSStrokeColorAttributeName : UIColor.blackColor(),
@@ -114,13 +117,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func cancelMeme(sender: UIBarButtonItem) {
-        // Remove image and restore top and bottom titles to original state
-//        memeImageView.image = nil
-//        resetTextField(topTitle, defaultText: defaultTopText)
-//        resetTextField(bottomTitle, defaultText: defaultBottomText)
-//        navigationItem.leftBarButtonItem!.enabled = false
-//        self.navigationController?.popViewController
-          navigationController?.popToRootViewControllerAnimated(true)   
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+//        self dismissViewControllerAnimated:YES completion:nil
+//        self.navigationController?.popViewControllerAnimated(true)
 }
     
 
@@ -189,7 +189,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func generateMemedImage() -> UIImage {
         
         // Hide toolbar and navbar
-        navigationController?.navigationBarHidden = true
+        navBar.hidden = true
         toolBar.hidden = true
         
         // Render view to an image
