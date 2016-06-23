@@ -80,6 +80,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VbO-hM-PQs" userLabel="memeImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ier-Nd-6Cx">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
@@ -131,33 +134,27 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VbO-hM-PQs" userLabel="memeImageView">
-                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="R5E-Rz-7s5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="0QA-xR-gKg"/>
                             <constraint firstItem="nOJ-wu-Xpi" firstAttribute="leading" secondItem="ier-Nd-6Cx" secondAttribute="leading" id="0eY-kg-7Np"/>
                             <constraint firstItem="U93-FO-tme" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3Tg-bE-x7v"/>
                             <constraint firstItem="ier-Nd-6Cx" firstAttribute="top" secondItem="nOJ-wu-Xpi" secondAttribute="bottom" constant="13" id="4IL-Ff-EE8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ier-Nd-6Cx" secondAttribute="trailing" constant="-20" id="9Ue-SL-TiW"/>
+                            <constraint firstItem="R5E-Rz-7s5" firstAttribute="top" secondItem="U93-FO-tme" secondAttribute="bottom" constant="22" id="Fw1-yY-yLj"/>
                             <constraint firstAttribute="leadingMargin" secondItem="U93-FO-tme" secondAttribute="leading" constant="6" id="I3y-bs-vaw"/>
-                            <constraint firstItem="VbO-hM-PQs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="64" id="MWf-K8-Wr3"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VbO-hM-PQs" secondAttribute="bottom" constant="44" id="QzF-RC-2IU"/>
-                            <constraint firstItem="R5E-Rz-7s5" firstAttribute="top" secondItem="U93-FO-tme" secondAttribute="bottom" constant="22" id="Tp7-29-DMI"/>
+                            <constraint firstItem="VbO-hM-PQs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="MWf-K8-Wr3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VbO-hM-PQs" secondAttribute="bottom" id="QzF-RC-2IU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ier-Nd-6Cx" secondAttribute="bottom" id="VFx-IP-DG5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nOJ-wu-Xpi" secondAttribute="trailing" constant="-20" id="YL8-kg-dqQ"/>
-                            <constraint firstItem="R5E-Rz-7s5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Yok-D8-fvK"/>
-                            <constraint firstItem="R5E-Rz-7s5" firstAttribute="leading" secondItem="nOJ-wu-Xpi" secondAttribute="leading" id="eN9-o8-Khl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R5E-Rz-7s5" secondAttribute="trailing" constant="-20" id="e4g-ZW-emD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="U93-FO-tme" secondAttribute="trailing" constant="6" id="fRK-Kq-hOk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VbO-hM-PQs" secondAttribute="trailing" constant="-20" id="gpA-is-cjv"/>
-                            <constraint firstItem="R5E-Rz-7s5" firstAttribute="trailing" secondItem="nOJ-wu-Xpi" secondAttribute="trailing" id="hFJ-5j-xhl"/>
                             <constraint firstItem="VbO-hM-PQs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="kd4-a8-eZl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="R5E-Rz-7s5" secondAttribute="trailing" constant="-20" id="l5t-b6-rJw"/>
-                            <constraint firstItem="ier-Nd-6Cx" firstAttribute="top" secondItem="nOJ-wu-Xpi" secondAttribute="bottom" constant="13" id="mAU-uc-BYA"/>
                             <constraint firstItem="nOJ-wu-Xpi" firstAttribute="trailing" secondItem="ier-Nd-6Cx" secondAttribute="trailing" id="n3Y-va-xuV"/>
                             <constraint firstItem="nOJ-wu-Xpi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="qaW-SV-G1z"/>
-                            <constraint firstItem="R5E-Rz-7s5" firstAttribute="top" secondItem="U93-FO-tme" secondAttribute="bottom" constant="22" id="rEL-6e-2Aq"/>
                             <constraint firstItem="ier-Nd-6Cx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="xdw-7w-CV5"/>
                         </constraints>
                     </view>
@@ -247,10 +244,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4QF-Lb-7jH" userLabel="memeImageAndText">
-                                <rect key="frame" x="20" y="53" width="560" height="494"/>
+                                <rect key="frame" x="0.0" y="0.0" width="614" height="600"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="560" id="IZU-3X-xV1"/>
-                                    <constraint firstAttribute="height" constant="494" id="OCB-p6-ZXn"/>
+                                    <constraint firstAttribute="width" constant="614" id="IZU-3X-xV1"/>
+                                    <constraint firstAttribute="height" constant="600" id="OCB-p6-ZXn"/>
                                 </constraints>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IJJ-ZJ-OWy">
@@ -264,10 +261,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4QF-Lb-7jH" firstAttribute="top" secondItem="pth-NQ-3ke" secondAttribute="bottom" constant="33" id="DPY-MH-vF5"/>
-                            <constraint firstItem="4QF-Lb-7jH" firstAttribute="leading" secondItem="zvT-Yb-U44" secondAttribute="leadingMargin" id="SBQ-rr-hor"/>
-                            <constraint firstItem="Srb-ij-Z4f" firstAttribute="top" secondItem="4QF-Lb-7jH" secondAttribute="bottom" constant="53" id="jxF-kR-yxL"/>
-                            <constraint firstItem="4QF-Lb-7jH" firstAttribute="trailing" secondItem="zvT-Yb-U44" secondAttribute="trailingMargin" id="mN0-e3-u9K"/>
+                            <constraint firstItem="4QF-Lb-7jH" firstAttribute="top" secondItem="pth-NQ-3ke" secondAttribute="bottom" constant="-20" id="DPY-MH-vF5"/>
+                            <constraint firstItem="4QF-Lb-7jH" firstAttribute="leading" secondItem="zvT-Yb-U44" secondAttribute="leadingMargin" constant="-20" id="SBQ-rr-hor"/>
+                            <constraint firstItem="Srb-ij-Z4f" firstAttribute="top" secondItem="4QF-Lb-7jH" secondAttribute="bottom" id="jxF-kR-yxL"/>
+                            <constraint firstItem="4QF-Lb-7jH" firstAttribute="trailing" secondItem="zvT-Yb-U44" secondAttribute="trailingMargin" constant="34" id="mN0-e3-u9K"/>
                         </constraints>
                     </view>
                     <connections>
@@ -281,32 +278,59 @@
         <!--Collection View Controller-->
         <scene sceneID="LNs-9j-uul">
             <objects>
-                <collectionViewController title="Collection View Controller" id="hug-oP-muE" customClass="CollectionViewController" customModule="MemeMento" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="CollectionViewController" title="Collection View Controller" id="hug-oP-muE" customClass="CollectionViewController" customModule="MemeMento" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="9BV-ri-0El">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wMl-du-bw0">
-                            <size key="itemSize" width="150" height="150"/>
+                            <size key="itemSize" width="100" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemeCollectionViewCell" id="u4X-NO-AM5" userLabel="View" customClass="MemeCollectionViewCell" customModule="MemeMento" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="150" height="150"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MemeCollectionViewCell" reuseIdentifier="memeCell" id="u4X-NO-AM5" userLabel="memeCell" customClass="MemeCollectionViewCell" customModule="MemeMento" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3d1-AL-WeL" userLabel="memeImage">
-                                            <rect key="frame" x="8" y="11" width="134" height="131"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3d1-AL-WeL" userLabel="memeImage">
+                                            <rect key="frame" x="15" y="14" width="71" height="71"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocQ-k5-1OZ">
+                                            <rect key="frame" x="15" y="0.0" width="71" height="12"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GJ-R8-hZa">
+                                            <rect key="frame" x="15" y="88" width="71" height="12"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="3d1-AL-WeL" firstAttribute="top" secondItem="u4X-NO-AM5" secondAttribute="topMargin" constant="6" id="C3i-jF-k0e"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="3d1-AL-WeL" secondAttribute="bottom" constant="7" id="CEW-lQ-gyB"/>
+                                    <constraint firstItem="3d1-AL-WeL" firstAttribute="leading" secondItem="u4X-NO-AM5" secondAttribute="leadingMargin" constant="7" id="F2b-4l-OFE"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="0GJ-R8-hZa" secondAttribute="trailing" constant="6" id="Fr0-Oo-cFI"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="3d1-AL-WeL" secondAttribute="trailing" constant="6" id="gXp-bD-1Xj"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="0GJ-R8-hZa" secondAttribute="bottom" constant="-8" id="jGL-gT-ZIz"/>
+                                    <constraint firstItem="ocQ-k5-1OZ" firstAttribute="top" secondItem="u4X-NO-AM5" secondAttribute="topMargin" constant="-8" id="jmf-nX-Og4"/>
+                                    <constraint firstItem="0GJ-R8-hZa" firstAttribute="leading" secondItem="u4X-NO-AM5" secondAttribute="leadingMargin" constant="7" id="m10-hA-PLh"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="ocQ-k5-1OZ" secondAttribute="trailing" constant="6" id="pyA-DL-UpI"/>
+                                    <constraint firstItem="ocQ-k5-1OZ" firstAttribute="leading" secondItem="u4X-NO-AM5" secondAttribute="leadingMargin" constant="7" id="ull-mm-TgI"/>
+                                </constraints>
                                 <connections>
-                                    <outlet property="memeCollectionViewCell" destination="3d1-AL-WeL" id="lZk-Sp-ahv"/>
+                                    <outlet property="bottomTitle" destination="0GJ-R8-hZa" id="c9i-ZX-x3r"/>
+                                    <outlet property="memeImage" destination="3d1-AL-WeL" id="vYp-fj-ILe"/>
+                                    <outlet property="topTitle" destination="ocQ-k5-1OZ" id="eNv-g3-Gwq"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -323,6 +347,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="flowLayout" destination="wMl-du-bw0" id="XDn-qc-eW4"/>
                         <outlet property="memeCollectionView" destination="9BV-ri-0El" id="lVQ-w3-ckN"/>
                     </connections>
                 </collectionViewController>

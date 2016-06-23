@@ -203,6 +203,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         //  Show toolbar and navbar
         navigationController?.navigationBarHidden = false
         toolBar.hidden = false
+        navBar.hidden = false
         
         return memedImage
     }

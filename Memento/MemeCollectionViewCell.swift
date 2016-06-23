@@ -12,4 +12,7 @@ class MemeCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var memeImage: UIImageView!
     
+    @IBOutlet weak var topTitle: UILabel!
+    
+    @IBOutlet weak var bottomTitle: UILabel!
 }
