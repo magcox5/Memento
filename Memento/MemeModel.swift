@@ -15,3 +15,14 @@ struct Meme {
     var memeImage: UIImage!
 }
 
+
+class MemesList {
+    var memes: [Meme] = []
+
+    class var sharedInstance : MemesList {
+        struct Static {
+            static let instance: MemesList = MemesList()
+        }
+        return Static.instance
+    }
+}

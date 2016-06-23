@@ -7,13 +7,13 @@
 //
 
 
-var memes:  [Meme] = []
-
 import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var navBar: UINavigationBar!
+
+    let memesList = MemesList.sharedInstance
 
     let memeTextAttributes: [String: AnyObject] = [
         NSStrokeColorAttributeName : UIColor.blackColor(),
@@ -117,10 +117,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func cancelMeme(sender: UIBarButtonItem) {
-        
         self.dismissViewControllerAnimated(true, completion: nil)
-//        self dismissViewControllerAnimated:YES completion:nil
-//        self.navigationController?.popViewControllerAnimated(true)
 }
     
 
@@ -183,7 +180,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func save() {
         // Create the meme
         let meme = Meme( topText: topTitle.text!, bottomText:  bottomTitle.text!, originalImage: self.memeImageView.image, memeImage: generateMemedImage())
-        memes.append(meme)
+        self.memesList.memes.append(meme)
     }
     
     func generateMemedImage() -> UIImage {

@@ -10,10 +10,9 @@ import UIKit
 
 class MemeTableViewController: UITableViewController {
 
+    // Get memes from MemesList
+    let memesList = MemesList.sharedInstance
     
-    // Get memes from memes array
-//    var myMemes: [Meme] = []
- 
     @IBOutlet var memeTableView: UITableView!
     
     override func viewDidLoad() {
@@ -24,7 +23,6 @@ class MemeTableViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.hidden = false
-//        myMemes = memes
         memeTableView.reloadData()
     }
     
@@ -32,15 +30,13 @@ class MemeTableViewController: UITableViewController {
     // MARK: Table View Data Source
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return self.myMemes.count
-        return memes.count
+        return memesList.memes.count
   }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let memeCell = tableView.dequeueReusableCellWithIdentifier("memeCell")!
-//        let currentMeme = self.myMemes[indexPath.row]
-        let currentMeme = memes[indexPath.row]
+        let currentMeme = memesList.memes[indexPath.row]
       
         // Set the name and image
         memeCell.textLabel?.text = currentMeme.topText
@@ -57,8 +53,7 @@ class MemeTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let detailController = self.storyboard!.instantiateViewControllerWithIdentifier("MemeDetailViewController") as! MemeDetailViewController
-//        detailController.detailMeme = self.myMemes[indexPath.row]
-        detailController.detailMeme = memes[indexPath.row]
+        detailController.detailMeme = memesList.memes[indexPath.row]
       self.navigationController!.pushViewController(detailController, animated: true)
         
     }
