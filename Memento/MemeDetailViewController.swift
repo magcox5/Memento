@@ -14,21 +14,17 @@ class MemeDetailViewController: UIViewController {
     
     @IBOutlet weak var memeImageAndText: UIImageView!
     
-//    @IBAction func backToSentMemes(sender: AnyObject) {
-//        dismissViewControllerAnimated(true, completion: nil)
-//    }
-    
     override func viewWillAppear(animated: Bool) {
 
         super.viewWillAppear(animated)
 
-        self.tabBarController?.tabBar.hidden = true
-        self.memeImageAndText!.image = detailMeme.memeImage
+        tabBarController?.tabBar.hidden = true
+        memeImageAndText!.image = detailMeme.memeImage
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        self.tabBarController?.tabBar.hidden = false
+        tabBarController?.tabBar.hidden = false
     }
 
 

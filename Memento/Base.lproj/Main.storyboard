@@ -246,22 +246,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4QF-Lb-7jH" userLabel="memeImageAndText">
                                 <rect key="frame" x="0.0" y="0.0" width="614" height="600"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="614" id="IZU-3X-xV1"/>
-                                    <constraint firstAttribute="height" constant="600" id="OCB-p6-ZXn"/>
+                                    <constraint firstAttribute="width" priority="700" constant="614" id="IZU-3X-xV1"/>
+                                    <constraint firstAttribute="height" priority="800" constant="600" id="OCB-p6-ZXn"/>
                                 </constraints>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IJJ-ZJ-OWy">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <items>
-                                    <navigationItem title="Memento" id="HlR-8H-plg" userLabel="Title">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="bDe-xt-hMz"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4QF-Lb-7jH" firstAttribute="top" secondItem="pth-NQ-3ke" secondAttribute="bottom" constant="-20" id="DPY-MH-vF5"/>
+                            <constraint firstItem="4QF-Lb-7jH" firstAttribute="top" secondItem="pth-NQ-3ke" secondAttribute="bottom" priority="900" constant="-20" id="DPY-MH-vF5"/>
                             <constraint firstItem="4QF-Lb-7jH" firstAttribute="leading" secondItem="zvT-Yb-U44" secondAttribute="leadingMargin" constant="-20" id="SBQ-rr-hor"/>
                             <constraint firstItem="Srb-ij-Z4f" firstAttribute="top" secondItem="4QF-Lb-7jH" secondAttribute="bottom" id="jxF-kR-yxL"/>
                             <constraint firstItem="4QF-Lb-7jH" firstAttribute="trailing" secondItem="zvT-Yb-U44" secondAttribute="trailingMargin" constant="34" id="mN0-e3-u9K"/>

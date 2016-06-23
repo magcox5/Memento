@@ -11,7 +11,7 @@ import UIKit
 class CollectionViewController: UICollectionViewController {
     
     // Get memes from memes array
-    var myMemes: [Meme] = []
+//    var myMemes: [Meme] = []
     
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     @IBOutlet var memeCollectionView: UICollectionView!
@@ -36,7 +36,7 @@ class CollectionViewController: UICollectionViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.hidden = false
-        myMemes = memes
+//        myMemes = memes
         memeCollectionView.reloadData()
         
     }
@@ -44,12 +44,12 @@ class CollectionViewController: UICollectionViewController {
     // MARK: Collection View Data Source
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.myMemes.count
+        return memes.count
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let memeCell = collectionView.dequeueReusableCellWithReuseIdentifier("memeCell", forIndexPath: indexPath) as! MemeCollectionViewCell
-        let currentMeme = self.myMemes[indexPath.row]
+        let currentMeme = memes[indexPath.row]
         
         // Set the image
         memeCell.memeImage?.image = currentMeme.originalImage
@@ -62,7 +62,7 @@ class CollectionViewController: UICollectionViewController {
     {
         
         let detailController = self.storyboard!.instantiateViewControllerWithIdentifier("MemeDetailViewController") as! MemeDetailViewController
-        detailController.detailMeme = self.myMemes[indexPath.row]
+        detailController.detailMeme = memes[indexPath.row]
         self.navigationController!.pushViewController(detailController, animated: true)
         
     }
