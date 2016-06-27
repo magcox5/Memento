@@ -25,7 +25,8 @@ class ModifyTextStyleVC: UIViewController, UIPickerViewDataSource, UIPickerViewD
         NSStrokeColorAttributeName : UIColor.blackColor(),
         NSForegroundColorAttributeName : UIColor.whiteColor(),
         NSBackgroundColorAttributeName : UIColor.clearColor(),
-        NSFontAttributeName : UIFont(name: "HelveticaNeue-CondensedBlack", size: 30)!,
+//        NSFontAttributeName : UIFont(name: "HelveticaNeue-CondensedBlack", size: 30)!,
+        NSFontAttributeName : UIFont(name: "Impact", size: 30)!,
         NSStrokeWidthAttributeName : -3.0
     ]
 
@@ -35,7 +36,7 @@ class ModifyTextStyleVC: UIViewController, UIPickerViewDataSource, UIPickerViewD
     
     @IBOutlet weak var pickerView: UIPickerView!
     
-    var fontChoices = ["Helvetica Neue", "American  Typewriter", "Helvetica", "Iowan Old Style", "Times New Roman"]
+    var fontChoices = ["Impact", "Helvetica Neue", "American  Typewriter", "Helvetica", "Iowan Old Style", "Times New Roman"]
     
     var colorChoices = ["White", "Yellow", "Orange", "Red", "Green", "Blue", "Brown", "Black"]
     
