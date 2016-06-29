@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollectionViewController: UICollectionViewController {
+class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     // Get memes from memes memesList
     let memesList = MemesList.sharedInstance
@@ -20,14 +20,16 @@ class CollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         memeCollectionView.reloadData()
         
-        let space: CGFloat = 0.25
-        let dimensionWidth = (view.frame.size.width - (2 * space)) / 3.0
+        let space: CGFloat = 1.5
+        let width: CGFloat = 320.0
+        let height: CGFloat = 568.0
+        
+        let dimension:CGFloat = width >= height ? (width - (5 * space)) / 6.0 :  (width - (2 * space)) / 3.0
         flowLayout.minimumInteritemSpacing = space
-        flowLayout.minimumLineSpacing = space * 2
-        flowLayout.itemSize = CGSizeMake(dimensionWidth, dimensionWidth)
+        flowLayout.minimumLineSpacing = space * 4
+        flowLayout.itemSize = CGSizeMake(dimension, dimension)
+        
     }
-    
-    
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -47,9 +49,7 @@ class CollectionViewController: UICollectionViewController {
         let currentMeme = memesList.memes[indexPath.row]
       
         // Set the image
-        memeCell.memeImage?.image = currentMeme.originalImage
-        memeCell.topTitle.text = currentMeme.topText
-        memeCell.bottomTitle.text = currentMeme.bottomText
+        memeCell.memeImage?.image = currentMeme.memeImage
         return memeCell
     }
     
@@ -59,5 +59,17 @@ class CollectionViewController: UICollectionViewController {
         detailController.detailMeme = memesList.memes[indexPath.row]
         self.navigationController!.pushViewController(detailController, animated: true)
     }
-
+    
+//    // MARK: - UICollectionViewFlowLayout
+//    
+//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+//        let picDimension = self.view.frame.size.width / 2.0
+//        return CGSizeMake(picDimension, picDimension)
+//    }
+//    
+//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+//        let leftRightInset = self.view.frame.size.width / 40.0
+//        return UIEdgeInsetsMake(0, leftRightInset, 0, leftRightInset)
+//    }
+//
 }

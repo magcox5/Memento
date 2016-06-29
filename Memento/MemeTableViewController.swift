@@ -40,7 +40,7 @@ class MemeTableViewController: UITableViewController {
       
         // Set the name and image
         memeCell.textLabel?.text = currentMeme.topText
-        memeCell.imageView?.image = currentMeme.originalImage
+        memeCell.imageView?.image = currentMeme.memeImage
         
         // If the cell has a detail label, we will put the evil scheme in.
         if let detailTextLabel = memeCell.detailTextLabel {

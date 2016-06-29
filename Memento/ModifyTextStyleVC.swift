@@ -30,7 +30,7 @@ class ModifyTextStyleVC: UIViewController, UIPickerViewDataSource, UIPickerViewD
         NSStrokeWidthAttributeName : -3.0
     ]
 
-    weak var firstViewController : ViewController?
+    weak var firstViewController : EditViewController?
     
     @IBOutlet weak var textToModify: UITextField!
     

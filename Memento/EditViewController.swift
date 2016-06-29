@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  EditViewController.swift
 //  PickImageExperiment
 //
 //  Created by Molly Cox on 4/4/16.
@@ -9,7 +9,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+class EditViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var navBar: UINavigationBar!
 
@@ -123,10 +123,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     // Subscribe to keyboard notifications so keyboard can be 
     // moved up when editing bottom title
-    func subscribeToKeyboardNotifications() {        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.keyboardWillShow(_:))    ,
+    func subscribeToKeyboardNotifications() {        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(EditViewController.keyboardWillShow(_:))    ,
         name: UIKeyboardWillShowNotification, object: nil)
 
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.keyboardWillHide(_:))    ,
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(EditViewController.keyboardWillHide(_:))    ,
            name: UIKeyboardWillHideNotification, object: nil)
     }
     

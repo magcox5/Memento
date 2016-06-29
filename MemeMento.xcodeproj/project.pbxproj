@@ -15,7 +15,7 @@
 		DAA8A0111D1E39A000A60F8A /* Impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A0101D1E39A000A60F8A /* Impact.ttf */; };
 		DAF588A11CDEB62D0091B703 /* ModifyTextStyleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF588A01CDEB62D0091B703 /* ModifyTextStyleVC.swift */; };
 		DAF7411F1CB30F0500CE49B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF7411E1CB30F0500CE49B2 /* AppDelegate.swift */; };
-		DAF741211CB30F0500CE49B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF741201CB30F0500CE49B2 /* ViewController.swift */; };
+		DAF741211CB30F0500CE49B2 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF741201CB30F0500CE49B2 /* EditViewController.swift */; };
 		DAF741241CB30F0500CE49B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF741221CB30F0500CE49B2 /* Main.storyboard */; };
 		DAF741261CB30F0500CE49B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF741251CB30F0500CE49B2 /* Assets.xcassets */; };
 		DAF741291CB30F0500CE49B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF741271CB30F0500CE49B2 /* LaunchScreen.storyboard */; };
@@ -31,7 +31,7 @@
 		DAF588A01CDEB62D0091B703 /* ModifyTextStyleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModifyTextStyleVC.swift; sourceTree = "<group>"; };
 		DAF7411B1CB30F0500CE49B2 /* MemeMento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF7411E1CB30F0500CE49B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DAF741201CB30F0500CE49B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAF741201CB30F0500CE49B2 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		DAF741231CB30F0500CE49B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAF741251CB30F0500CE49B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAF741281CB30F0500CE49B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				DAF7411E1CB30F0500CE49B2 /* AppDelegate.swift */,
-				DAF741201CB30F0500CE49B2 /* ViewController.swift */,
+				DAF741201CB30F0500CE49B2 /* EditViewController.swift */,
 				DAA8A00B1D189D2700A60F8A /* MemeDetailViewController.swift */,
 				DAF588A01CDEB62D0091B703 /* ModifyTextStyleVC.swift */,
 				DAF741221CB30F0500CE49B2 /* Main.storyboard */,
@@ -170,7 +170,7 @@
 				DA1840501D17B5520074925D /* CollectionViewController.swift in Sources */,
 				DAF588A11CDEB62D0091B703 /* ModifyTextStyleVC.swift in Sources */,
 				DAA8A00E1D18FF1A00A60F8A /* MemeCollectionViewCell.swift in Sources */,
-				DAF741211CB30F0500CE49B2 /* ViewController.swift in Sources */,
+				DAF741211CB30F0500CE49B2 /* EditViewController.swift in Sources */,
 				DAF7411F1CB30F0500CE49B2 /* AppDelegate.swift in Sources */,
 				DAA8A00C1D189D2700A60F8A /* MemeDetailViewController.swift in Sources */,
 				DA18404E1D17B4CC0074925D /* MemeTableViewController.swift in Sources */,
