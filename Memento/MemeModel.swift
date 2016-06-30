@@ -5,7 +5,8 @@
 //  Created by Molly Cox on 5/18/16.
 //  Copyright © 2016 Molly Cox. All rights reserved.
 //
-
+//  Thanks to Udacity coach Owen for help with meme array and
+//  the post on implementing the singleton pattern
 import UIKit
 
 struct Meme {
