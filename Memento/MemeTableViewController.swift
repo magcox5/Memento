@@ -45,7 +45,7 @@ class MemeTableViewController: UITableViewController {
 
         // Set image size for cell
         let itemSize = CGSizeMake(115,115)
-        UIGraphicsBeginImageContextWithOptions(itemSize, false, UIScreen.mainScreen().scale)
+        UIGraphicsBeginImageContextWithOptions(itemSize, false, 0.0)
         let imageRect = CGRectMake(0.0, 0.0, itemSize.width, itemSize.height)
         memeCell.imageView?.image!.drawInRect(imageRect)
         memeCell.imageView?.image! = UIGraphicsGetImageFromCurrentImageContext()

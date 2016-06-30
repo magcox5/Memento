@@ -201,53 +201,34 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="115"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwK-Pj-AWy">
-                                            <rect key="frame" x="0.0" y="0.0" width="290" height="115"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="115" translatesAutoresizingMaskIntoConstraints="NO" id="0l5-K7-ldj" userLabel="memeImage">
-                                                    <rect key="frame" x="0.0" y="0.0" width="107" height="115"/>
-                                                </imageView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JyE-Nz-2Oj">
-                                                    <rect key="frame" x="107" y="0.0" width="183" height="115"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="topText" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hph-iR-WAF">
-                                                            <rect key="frame" x="28" y="25" width="76" height="21"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="21" id="i5e-z1-QIT"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bottomText" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iun-rg-faJ">
-                                                            <rect key="frame" x="28" y="63" width="76" height="21"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstItem="Hph-iR-WAF" firstAttribute="leading" secondItem="iun-rg-faJ" secondAttribute="leading" id="3oU-8l-bd0"/>
-                                                        <constraint firstItem="Hph-iR-WAF" firstAttribute="leading" secondItem="JyE-Nz-2Oj" secondAttribute="leadingMargin" priority="900" constant="20" id="5BU-lx-LB6"/>
-                                                        <constraint firstItem="iun-rg-faJ" firstAttribute="top" secondItem="Hph-iR-WAF" secondAttribute="bottom" constant="17" id="5EM-ii-IHJ"/>
-                                                        <constraint firstItem="Hph-iR-WAF" firstAttribute="top" secondItem="JyE-Nz-2Oj" secondAttribute="top" constant="25" id="Ica-8H-7Xh"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Hph-iR-WAF" secondAttribute="trailing" constant="79" id="Qj2-f8-ClA"/>
-                                                        <constraint firstAttribute="bottom" secondItem="iun-rg-faJ" secondAttribute="bottom" constant="31" id="lJU-7S-11o"/>
-                                                        <constraint firstItem="Hph-iR-WAF" firstAttribute="trailing" secondItem="iun-rg-faJ" secondAttribute="trailing" id="phv-0w-Tjf"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="topText" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hph-iR-WAF">
+                                            <rect key="frame" x="249" y="23" width="76" height="21"/>
                                             <constraints>
-                                                <constraint firstItem="Hph-iR-WAF" firstAttribute="leading" secondItem="0l5-K7-ldj" secondAttribute="trailing" priority="850" constant="20" id="kkm-dF-dka"/>
+                                                <constraint firstAttribute="height" constant="21" id="i5e-z1-QIT"/>
                                             </constraints>
-                                        </stackView>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bottomText" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iun-rg-faJ">
+                                            <rect key="frame" x="249" y="63" width="76" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="115" translatesAutoresizingMaskIntoConstraints="NO" id="0l5-K7-ldj" userLabel="memeImage">
+                                            <rect key="frame" x="8" y="0.0" width="115" height="115"/>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="mwK-Pj-AWy" firstAttribute="leading" secondItem="SXq-qR-E4O" secondAttribute="leading" id="3jp-8C-ghA"/>
-                                        <constraint firstAttribute="bottom" secondItem="mwK-Pj-AWy" secondAttribute="bottom" id="EAB-aZ-l7A"/>
-                                        <constraint firstItem="mwK-Pj-AWy" firstAttribute="top" secondItem="SXq-qR-E4O" secondAttribute="top" id="rYH-Qp-dy2"/>
-                                        <constraint firstAttribute="trailing" secondItem="mwK-Pj-AWy" secondAttribute="trailing" constant="310" id="yLt-hG-jgr"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="iun-rg-faJ" secondAttribute="bottom" constant="23" id="AAd-YF-45b"/>
+                                        <constraint firstItem="iun-rg-faJ" firstAttribute="top" secondItem="Hph-iR-WAF" secondAttribute="bottom" constant="19" id="OAI-KL-z5m"/>
+                                        <constraint firstItem="Hph-iR-WAF" firstAttribute="leading" secondItem="iun-rg-faJ" secondAttribute="leading" id="R5E-u4-iO0"/>
+                                        <constraint firstItem="Hph-iR-WAF" firstAttribute="trailing" secondItem="iun-rg-faJ" secondAttribute="trailing" id="SCC-BI-MAV"/>
+                                        <constraint firstItem="0l5-K7-ldj" firstAttribute="leading" secondItem="SXq-qR-E4O" secondAttribute="leadingMargin" id="dpa-CP-KiP"/>
+                                        <constraint firstItem="Hph-iR-WAF" firstAttribute="top" secondItem="SXq-qR-E4O" secondAttribute="topMargin" constant="15" id="tHl-wR-FR4"/>
+                                        <constraint firstItem="Hph-iR-WAF" firstAttribute="leading" secondItem="SXq-qR-E4O" secondAttribute="leading" constant="249" id="xJL-59-fzx"/>
+                                        <constraint firstItem="0l5-K7-ldj" firstAttribute="top" secondItem="SXq-qR-E4O" secondAttribute="top" id="ywk-9k-Dh9"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
