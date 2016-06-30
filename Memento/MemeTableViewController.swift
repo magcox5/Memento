@@ -35,18 +35,22 @@ class MemeTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let memeCell = tableView.dequeueReusableCellWithIdentifier("memeCell")!
+        let memeCell = tableView.dequeueReusableCellWithIdentifier("memeCell")!  as! MemeTableViewCell
         let currentMeme = memesList.memes[indexPath.row]
       
-        // Set the name and image
-        memeCell.textLabel?.text = currentMeme.topText
+        // Set the labels and image
+        memeCell.topText?.text = currentMeme.topText
+        memeCell.bottomText?.text = currentMeme.bottomText
         memeCell.imageView?.image = currentMeme.memeImage
-        
-        // If the cell has a detail label, we will put the evil scheme in.
-        if let detailTextLabel = memeCell.detailTextLabel {
-            detailTextLabel.text = currentMeme.bottomText
-        }
-        
+
+        // Set image size for cell
+        let itemSize = CGSizeMake(115,115)
+        UIGraphicsBeginImageContextWithOptions(itemSize, false, UIScreen.mainScreen().scale)
+        let imageRect = CGRectMake(0.0, 0.0, itemSize.width, itemSize.height)
+        memeCell.imageView?.image!.drawInRect(imageRect)
+        memeCell.imageView?.image! = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
         return memeCell
     }
     
