@@ -13,8 +13,11 @@ class MemeTableViewController: UITableViewController {
     // Get memes from MemesList
     let memesList = MemesList.sharedInstance
     
+    // Outlet
     @IBOutlet var memeTableView: UITableView!
     
+    
+    // Reload table view when view appears/loads
     override func viewDidLoad() {
         super.viewDidLoad()
         memeTableView.reloadData()
@@ -35,21 +38,13 @@ class MemeTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let memeCell = tableView.dequeueReusableCellWithIdentifier("memeCell")!  as! MemeTableViewCell
+        let memeCell = tableView.dequeueReusableCellWithIdentifier("memeCell")!
         let currentMeme = memesList.memes[indexPath.row]
       
         // Set the labels and image
-        memeCell.topText?.text = currentMeme.topText
-        memeCell.bottomText?.text = currentMeme.bottomText
+        memeCell.textLabel?.text = currentMeme.topText
+        memeCell.detailTextLabel?.text = currentMeme.bottomText
         memeCell.imageView?.image = currentMeme.memeImage
-
-        // Set image size for cell
-        let itemSize = CGSizeMake(115,115)
-        UIGraphicsBeginImageContextWithOptions(itemSize, false, 0.0)
-        let imageRect = CGRectMake(0.0, 0.0, itemSize.width, itemSize.height)
-        memeCell.imageView?.image!.drawInRect(imageRect)
-        memeCell.imageView?.image! = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
 
         return memeCell
     }

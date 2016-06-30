@@ -11,8 +11,7 @@ import UIKit
 
 class EditViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
-    @IBOutlet weak var navBar: UINavigationBar!
-
+    // Variables
     let memesList = MemesList.sharedInstance
 
     let memeTextAttributes: [String: AnyObject] = [
@@ -26,8 +25,8 @@ class EditViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     let defaultTopText = "TOP"
     let defaultBottomText = "BOTTOM"
 
+    // Set Text Field to Original values
     func resetTextField(textField: UITextField, defaultText: String) {
-        // Set Text Field to Original values
         textField.text = defaultText
         textField.defaultTextAttributes = memeTextAttributes
         textField.textAlignment = .Center
@@ -55,6 +54,8 @@ class EditViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     // Outlets
 
+    @IBOutlet weak var navBar: UINavigationBar!
+    
     @IBOutlet weak var topTitle: UITextField!
     
     @IBOutlet weak var bottomTitle: UITextField!
@@ -69,6 +70,7 @@ class EditViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     @IBOutlet weak var textStyleButton: UIBarButtonItem!
     
+
     // Actions
     
     @IBAction func pickAnImage(sender: UIBarButtonItem) {

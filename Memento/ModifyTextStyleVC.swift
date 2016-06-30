@@ -25,7 +25,6 @@ class ModifyTextStyleVC: UIViewController, UIPickerViewDataSource, UIPickerViewD
         NSStrokeColorAttributeName : UIColor.blackColor(),
         NSForegroundColorAttributeName : UIColor.whiteColor(),
         NSBackgroundColorAttributeName : UIColor.clearColor(),
-//        NSFontAttributeName : UIFont(name: "HelveticaNeue-CondensedBlack", size: 30)!,
         NSFontAttributeName : UIFont(name: "Impact", size: 30)!,
         NSStrokeWidthAttributeName : -3.0
     ]

@@ -21,8 +21,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         memeCollectionView.reloadData()
         
         let space: CGFloat = 1.5
-//        let width: CGFloat = 320.0
-//        let height: CGFloat = 568.0
         let dimensionWidth = (view.frame.size.width)
         let dimensionHeight = (view.frame.size.height)
 
